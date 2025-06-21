@@ -70,7 +70,7 @@ export const CHORD_TYPES = Object.keys(CHORD_FORMULAS);
 /**
  * 輔助函數：從音符名稱中獲取其基礎字母 (去除所有升降記號)
  */
-function getBaseLetter(note: Note): string {
+export function getBaseLetter(note: Note): string {
     // 簡單地取音名第一個字元，並轉為大寫
     return note.charAt(0).toUpperCase();
 }

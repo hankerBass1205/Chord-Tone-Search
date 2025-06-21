@@ -1,5 +1,6 @@
 // src/app/components/ChordDisplay.tsx
 import { Note } from '@/lib/chordLogic';
+import StaffDisplay from './StaffDisplay';
 
 interface ChordDisplayProps {
     rootNote: Note;
@@ -20,6 +21,11 @@ export default function ChordDisplay({ rootNote, chordType, notes }: ChordDispla
             <p className="text-xl mt-2">
                 Notes: <span className="font-mono tracking-widest">{notes.join(' - ')}</span>
             </p>
+             {/* 添加五線譜顯示 */}
+            <div style={{ marginTop: '20px' }}>
+                <h3>五線譜圖</h3>
+                <StaffDisplay chordNotes={notes} width={400} height={150} />
+            </div>
         </div>
     );
 }

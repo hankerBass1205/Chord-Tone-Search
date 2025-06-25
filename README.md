@@ -1,6 +1,6 @@
 # 🎸 Chord Tone Helper / 五線譜和弦顯示與播放工具
 
-## ![Project Demo GIF](https://your-image-hosting-service.com/your-project-demo.gif)
+https://chord-tone-search.vercel.app/
 
 ## 🚀 專案簡介
 
